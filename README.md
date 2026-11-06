@@ -5,7 +5,7 @@ A small Python project for exploring search strategies on the 3×3 sliding-tile 
 ```text
 1 2 3
 4 5 6
-7 8 _
+7 8 0
 ```
 
 ## Run
