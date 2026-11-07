@@ -1,4 +1,4 @@
-"""Breadth-first and heuristic search examples for the 8-puzzle."""
+"""Heuristic search examples for the 8-puzzle."""
 
 from collections import deque
 from copy import deepcopy
