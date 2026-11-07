@@ -130,28 +130,6 @@ def stringify(board):
     """Create a stable string key for a board state."""
     return "-".join(str(row) for row in board)
 
-
-def solve_via_bfs(start):
-    """Print boards explored by breadth-first search until the goal is found."""
-    queue = deque([start])
-    visited = set()
-
-    while queue:
-        current = queue.popleft()
-        state_key = stringify(current)
-        visited.add(state_key)
-        print(current)
-
-        if current == GOAL:
-            print("Goal found")
-            return
-
-        for neighbor in make_neighbors(current):
-            neighbor_key = stringify(neighbor)
-            if neighbor_key not in visited:
-                queue.append(neighbor)
-
-
 def solve_via_a_star(start):
     """Print boards explored using a score based on matching goal positions.
 
